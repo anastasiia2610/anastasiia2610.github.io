@@ -46,11 +46,11 @@ if (choosingTea1){
 }
 
 
-let drinkChoosingMessage2 = choosingTea1 ?
+let drinkChoosingMessage2 = choosingTea2 ?
     'Thank you for choosing our cafe! Your order : a cup of tea!':
-    choosingCoffee1 ? 
+    choosingCoffee2 ? 
     'Thank you for choosing our cafe! Your order : a cup of coffee!' :
-    choosingTea1 && addSugar1 ?
+    choosingTea2 && addSugar2 ?
     'Thank you for choosing our cafe! Your order: a cup of tea with sugar!' :
     'Thank you for choosing our cafe! Your order : a cup of tea!';
 
