@@ -33,24 +33,8 @@ let createUser = function(firstName, lastName, age) {
 
 
 
-//let number = prompt("Please, enter your number:");
-
-//let result;
-  
-//if (number < 100) {
-  //  result = function() {
-    //alert(`${number} is not good enough!`);
-    //};
-//} else {
-  //  result = function() {
-    //alert(`${number} is good!`);
-    //};
-  //}
-  
-  //result();
-
   function insertNumber(correctNumber, wrongNumber) {
-    const askNumber = prompt("Please, enter your number:");
+    const askNumber = +prompt("Please, enter your number:");
 
     if (askNumber < 100) {
       correctNumber();
