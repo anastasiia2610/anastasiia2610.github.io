@@ -45,9 +45,9 @@ let createUser = function(firstName, lastName, age) {
 
   insertNumber(
     function () {
-      alert(`${askNumber} is correct!`);
+      alert('Your number is correct!');
     },
     function () {
-      alert(`${askNumber} is wrong!`);
+      alert('Your number is wrong!');
     },
   );
