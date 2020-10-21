@@ -1,0 +1,53 @@
+'use strict';
+
+function pow(a, b) {
+    let result = a;
+  
+    for (let i = 1; i < b; i++) {
+      result *= a;
+    }
+  
+    return result;
+  }
+  
+  let a = prompt('Please, enter the first number:');
+  let b = prompt ('Please, enter the second number:');
+  
+  if (b < 1) {
+    alert(`Operation ${b} is not supported!`);
+  } else {
+    alert( pow(a, b) );
+  }
+
+
+  
+let createUser = function(firstName, lastName, age) { 
+    firstName = prompt('What is your First Name?');
+    lastName = prompt('What is your Last Name?');
+    age = prompt('How old are you??');
+
+    alert(`${firstName} ${lastName}, ${age}!`);
+  };
+
+  createUser();
+
+
+
+  function insertNumber(correctNumber, wrongNumber) {
+    const askNumber = +prompt("Please, enter your number:");
+
+    if (askNumber < 100) {
+      correctNumber();
+    } else {
+      wrongNumber();
+    }
+  }
+
+  insertNumber(
+    function () {
+      alert('Your number is correct!');
+    },
+    function () {
+      alert('Your number is wrong!');
+    },
+  );
