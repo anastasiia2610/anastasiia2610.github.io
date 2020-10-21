@@ -25,7 +25,7 @@ let createUser = function(firstName, lastName, age) {
     firstName = prompt('What is your First Name?');
     lastName = prompt('What is your Last Name?');
     age = prompt('How old are you??');
-    
+
     alert(`${firstName} ${lastName}, ${age}!`);
   };
 
@@ -33,18 +33,37 @@ let createUser = function(firstName, lastName, age) {
 
 
 
-let number = prompt("Please, enter your number:");
+//let number = prompt("Please, enter your number:");
 
-let result;
+//let result;
   
-if (number < 100) {
-    result = function() {
-    alert(`${number} is not good enough!`);
-    };
-} else {
-    result = function() {
-    alert(`${number} is good!`);
-    };
+//if (number < 100) {
+  //  result = function() {
+    //alert(`${number} is not good enough!`);
+    //};
+//} else {
+  //  result = function() {
+    //alert(`${number} is good!`);
+    //};
+  //}
+  
+  //result();
+
+  function insertNumber(correctNumber, wrongNumber) {
+    const askNumber = prompt("Please, enter your number:");
+
+    if (askNumber < 100) {
+      correctNumber();
+    } else {
+      wrongNumber();
+    }
   }
-  
-  result();
+
+  insertNumber(
+    function () {
+      alert(`${askNumber} is correct!`);
+    },
+    function () {
+      alert(`${askNumber} is wrong!`);
+    },
+  );
