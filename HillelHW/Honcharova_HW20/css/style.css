@@ -1,0 +1,31 @@
+body {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.background {
+    background: url(../img/call-me-hangry-hoUmVcrsCVU-unsplash.jpg) no-repeat;
+    background-size: cover;
+}
+
+.table__title {
+    padding: 30px 0;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px dotted #fff; 
+}
+
+.table {
+    width: 980px;
+    margin: 0 auto;
+    padding: 40px 0 100px;
+    text-align: center;
+    color: #000;
+}
+
+th,
+td {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px dotted #fff;  
+}
+
