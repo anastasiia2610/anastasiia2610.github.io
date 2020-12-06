@@ -41,10 +41,18 @@ function factorialRecursion(num) {
 }
 
 
-function factorialLooping (num) {
-
-    return (num != 1) ? num * factorialLooping(num - 1) : 1;
-
+function factorialLooping1(num) {
+    if ((num != 1)) {
+        return num * factorialLooping1(num - 1);
+    } else {
+        return 1;
+    }
 }
 
+
+function factorialLooping2(num) {
+
+    return (num != 1) ? num * factorialLooping2(num - 1) : 1;
+
+}
 
