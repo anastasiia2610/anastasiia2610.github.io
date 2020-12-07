@@ -32,7 +32,7 @@ function fibonacciLooping(num) {
 
 
 
-function factorialRecursion(num) {
+function factorialLooping(num) {
 
     if (num < 1) return 1;
 
@@ -46,18 +46,14 @@ function factorialRecursion(num) {
 }
 
 
-function factorialLooping1(num) {
+function factorialRecursion(num) {
     if ((num != 1)) {
-        return num * factorialLooping1(num - 1);
+        return num * factorialRecursion(num - 1);
     } else {
         return 1;
     }
 }
 
 
-function factorialLooping2(num) {
 
-    return (num != 1) ? num * factorialLooping2(num - 1) : 1;
-
-}
 
