@@ -36,8 +36,13 @@ function factorialRecursion(num) {
 
     if (num < 1) return 1;
 
-    return num * factorialRecursion(num - 1);
+    let result = num;
 
+    for (let i = 1; i < num; i++) {
+    result *= i;
+   }
+
+  return result;
 }
 
 
